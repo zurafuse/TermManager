@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermManager.AddNote">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="wgu.jpg" HeightRequest="40" />
+            <Label Text="TERM AND COURSE MANAGER" 
+               HorizontalOptions="Center" VerticalOptions="Center" FontSize="19" />
+        </StackLayout>
+        <StackLayout Margin="15, 0, 0, 0">
+            <Label Text="NEW NOTE" />
+            <Label Text="Enter the content of your note: " Margin="0, 0, 0, 20" />
+            <Entry x:Name="noteEntry" Placeholder="Enter the content of your note here." />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0" >
+            <Button x:Name="saveButton" Text="SAVE" BackgroundColor="Green" HorizontalOptions="Start" />
+            <Button x:Name="cancelButton" Text="CANCEL" BackgroundColor="Orange" HorizontalOptions="End" Margin="80, 0, 0, 0" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

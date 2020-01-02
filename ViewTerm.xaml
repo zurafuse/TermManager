@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermManager.ViewTerm">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <StackLayout Orientation="Horizontal">
+            <Image Source="wgu.jpg" HeightRequest="40" />
+            <Label Text="TERM AND COURSE MANAGER" 
+           HorizontalOptions="Center" VerticalOptions="Center" FontSize="19" />
+        </StackLayout>
+        <Entry x:Name="termName" Placeholder="Enter the term name here." Margin="15, 0, 0, 0" FontSize="22" />
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="startLabel" Text="Start date: " Margin="15, 0, 0, 0" FontSize="20" VerticalTextAlignment="Center" />
+            <DatePicker x:Name="startDatePicker" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="endLabel" Text="End date: " Margin="15, 0, 0, 0" FontSize="20" VerticalTextAlignment="Center" />
+            <DatePicker x:Name="endDatePicker" />
+        </StackLayout>
+        <Label Text="You are expected to complete six courses for the term." Margin="15, 0, 0, 0" FontSize="20" />
+        <Button x:Name="viewCoursesButton" Text="COURSES FOR THIS TERM" BackgroundColor="LightSkyBlue" HorizontalOptions="Fill" Margin="15, 10, 0, 10" />
+        <Label x:Name="courseNarrative" Text="Press the COURSES FOR THIS TERM button to add, delete, edit, or view course information." Margin="15, 0, 0, 0" FontSize="16" />
+
+        <Button x:Name="saveButton" Text="SAVE CHANGES" BackgroundColor="Green" HorizontalOptions="Fill" Margin="15, 10, 0, 10" />
+        <Button x:Name="cancelButton" Text="CANCEL" BackgroundColor="Orange" HorizontalOptions="Fill" Margin="15, 10, 0, 10" />
+        <Button x:Name="deleteButton" Text="DELETE TERM" BackgroundColor="Red" HorizontalOptions="Fill" Margin="15, 10, 0, 10" />
+    </StackLayout>
+
+</ContentPage>

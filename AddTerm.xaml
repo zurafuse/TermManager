@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermManager.AddTerm">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <StackLayout Orientation="Horizontal">
+            <Image Source="wgu.jpg" HeightRequest="40" />
+            <Label Text="TERM AND COURSE MANAGER" 
+           HorizontalOptions="Center" VerticalOptions="Center" FontSize="19" />
+        </StackLayout>
+        <Label Text="NEW TERM" FontSize="22" Margin="15, 0, 0, 0" />
+        <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0">
+            <Label Text="Term name: " FontSize="22" VerticalTextAlignment="Center"  />
+            <Entry x:Name="termName" FontSize="22" Placeholder="Enter the term name here." />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="startLabel" Text="Start date: " Margin="15, 0, 0, 0" FontSize="20" VerticalTextAlignment="Center" />
+            <DatePicker x:Name="startDatePicker" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="endLabel" Text="End date: " Margin="15, 0, 0, 0" FontSize="20" VerticalTextAlignment="Center" />
+            <DatePicker x:Name="endDatePicker" />
+        </StackLayout>
+        <Label Text="You are expected to add six courses to the term." Margin="15, 0, 0, 0" FontSize="20" />
+        <StackLayout Orientation="Horizontal" Margin="15, 35, 0, 0">
+            <Button x:Name="saveButton" Text="SAVE CHANGES" BackgroundColor="Green" HorizontalOptions="Start" />
+            <Button x:Name="cancelButton" Text="CANCEL" BackgroundColor="Orange" HorizontalOptions="End" Margin="60, 0, 0, 0" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

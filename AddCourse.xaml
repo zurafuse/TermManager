@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermManager.AddCourse">
+    <Grid>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="wgu.jpg" HeightRequest="40" />
+                <Label Text="TERM AND COURSE MANAGER" 
+           HorizontalOptions="Center" VerticalOptions="Center" FontSize="19" />
+            </StackLayout>
+            <Label Text="Scroll through page to view all content." Margin="15, 10, 0, 10" FontSize="16" />
+            <ScrollView BackgroundColor="#e9eef7">
+                <StackLayout>
+                    <Label Text="ADD NEW COURSE" Margin="15, 0, 0, 0" />
+                    <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0">
+                        <Label Text="Course name: " VerticalTextAlignment="Center" />
+                        <Entry x:Name="courseName" Placeholder="Course name goes here." />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="startLabel" Text="Start date: " Margin="15, 0, 0, 0" FontSize="20" VerticalTextAlignment="Center" />
+                        <DatePicker x:Name="startDatePicker" />
+                    </StackLayout>
+                    <StackLayout x:Name="startDateStack" Orientation="Horizontal" Margin="0, 0, 0, 25">
+                        <Label Text="Receive a notification for the course start date?" VerticalTextAlignment="Center" Margin="15, 0, 0, 0" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="endLabel" Text="Due date: " Margin="15, 0, 0, 0" FontSize="20" VerticalTextAlignment="Center" />
+                        <DatePicker x:Name="endDatePicker" />
+                    </StackLayout>
+                    <StackLayout x:Name="endDateStack" Orientation="Horizontal">
+                        <Label Text="Receive a notification for the course end date?" VerticalTextAlignment="Center" Margin="15, 0, 0, 0" />
+                    </StackLayout>
+                    <StackLayout x:Name="courseStatus" Orientation="Horizontal">
+                        <Label Text="Status: " Margin="15, 0, 0, 0" FontSize="20" VerticalTextAlignment="Center" />
+                    </StackLayout>
+
+                    <Label Text="INSTRUCTOR INFORMATION" Margin="15, 25, 0, 0" />
+                    <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0">
+                        <Label Text="Instructor Name: " VerticalTextAlignment="Center" />
+                        <Entry x:Name="instructorName" Placeholder="Enter instructor name here." />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0" >
+                        <Label Text="Instructor Phone Number: " VerticalTextAlignment="Center" />
+                        <Entry x:Name="instructorPhone" Placeholder="Enter instructor phone number here." />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0" >
+                        <Label Text="Instructor Email Address: " VerticalTextAlignment="Center" />
+                        <Entry x:Name="instructorEmail" Placeholder="Enter instructor email address here." />
+                    </StackLayout>
+
+                    <Label Text="Objective Assessment" Margin="15, 25, 0, 0" />
+                    <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0">
+                        <Label Text="Name: " VerticalTextAlignment="Center" />
+                        <Entry x:Name="objName" Placeholder="Enter objective assessment name here." />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start date: " Margin="15, 0, 0, 0" VerticalTextAlignment="Center" />
+                        <DatePicker x:Name="objStart" />
+                    </StackLayout>
+                    <StackLayout x:Name="objStartStack" Orientation="Horizontal">
+                        <Label Text="Receive a notification for the Objective Assessment start date?" VerticalTextAlignment="Center" Margin="15, 0, 0, 0" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Due date: " Margin="15, 0, 0, 0" VerticalTextAlignment="Center" />
+                        <DatePicker x:Name="objEnd" />
+                    </StackLayout>
+                    <StackLayout x:Name="objEndStack" Orientation="Horizontal">
+                        <Label Text="Receive a notification for the Objective Assessment due date?" VerticalTextAlignment="Center" Margin="15, 0, 0, 0" />
+                    </StackLayout>
+
+                    <Label Text="Performance Assessment" Margin="15, 25, 0, 0" />
+                    <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0">
+                        <Label Text="Name: " VerticalTextAlignment="Center" />
+                        <Entry x:Name="perfName" Placeholder="Enter performance assessment here." />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start date: " Margin="15, 0, 0, 0" VerticalTextAlignment="Center" />
+                        <DatePicker x:Name="perfStart" />
+                    </StackLayout>
+                    <StackLayout x:Name="perfStartStack" Orientation="Horizontal">
+                        <Label Text="Receive a notification for the Performance Assessment start date?" VerticalTextAlignment="Center" Margin="15, 0, 0, 0" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Due date: " Margin="15, 0, 0, 0" VerticalTextAlignment="Center" />
+                        <DatePicker x:Name="perfEnd" />
+                    </StackLayout>
+                    <StackLayout x:Name="perfEndStack" Orientation="Horizontal">
+                        <Label Text="Receive a notification for the Performance Assessment due date?" Margin="15, 0, 0, 0" VerticalTextAlignment="Center" />
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout Orientation="Horizontal" Margin="15, 20, 0, 20" >
+                <Button x:Name="saveButton" Text="SAVE" BackgroundColor="Green" HorizontalOptions="Start" />
+                <Button x:Name="cancelButton" Text="CANCEL" BackgroundColor="Orange" HorizontalOptions="End" Margin="80, 0, 0, 0" />
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

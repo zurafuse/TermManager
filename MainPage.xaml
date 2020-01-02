@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermManager.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <StackLayout Orientation="Horizontal">
+            <Image Source="wgu.jpg" HeightRequest="40" />
+            <Label Text="TERM AND COURSE MANAGER" 
+           HorizontalOptions="Center" VerticalOptions="Center" FontSize="19" />
+        </StackLayout>
+        <Label Text="Click on a term below to manage it and to view its courses." Margin="15, 0, 0, 15" FontSize="20" />
+        <Label x:Name="yourTermsLabel" Text="YOUR TERMS:" Margin="15, 0, 0, 0" />
+        <ScrollView Margin="15, 0, 0, 0" BackgroundColor="#e9eef7">
+            <StackLayout x:Name="listOfTerms" />
+        </ScrollView>
+        <Button x:Name="addTermButton" Text="+ ADD NEW TERM" BackgroundColor="LightSkyBlue" HorizontalOptions="Fill" Margin="15, 0, 0, 20" />
+    </StackLayout>
+
+</ContentPage>

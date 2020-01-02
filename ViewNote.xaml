@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermManager.ViewNote">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="wgu.jpg" HeightRequest="40" />
+            <Label Text="TERM AND COURSE MANAGER" 
+               HorizontalOptions="Center" VerticalOptions="Center" FontSize="19" />
+        </StackLayout>
+        <StackLayout Margin="15, 0, 0, 25">
+            <Label Text="VIEW AND EDIT NOTE" />
+            <Entry x:Name="noteEntry" Placeholder="Enter the content of your note here." />
+        </StackLayout>
+        <Label Text="SHARE NOTE" Margin="15, 0, 0, 0" />
+        <Label Text="Recipient's Email Address: " Margin="15, 0, 0, 0" />
+        <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0" >
+            <Entry x:Name="emailEntry" Placeholder="enter email address here." />
+            <Button x:Name="emailButton" Text="EMAIL NOTE" BackgroundColor="Purple" TextColor="White" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="15, 20, 0, 0" >
+            <Button x:Name="saveButton" Text="SAVE" BackgroundColor="Green" HorizontalOptions="Start" />
+            <Button x:Name="cancelButton" Text="CANCEL" BackgroundColor="Orange" HorizontalOptions="End" Margin="80, 0, 0, 0" />
+        </StackLayout>
+        <Button x:Name="deleteButton" Text="DELETE" BackgroundColor="Red" HorizontalOptions="Fill" />
+    </StackLayout>
+</ContentPage>

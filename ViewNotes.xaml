@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TermManager.ViewNotes">
+    <StackLayout Margin="15, 0, 0, 0">
+        <StackLayout Orientation="Horizontal">
+            <Image Source="wgu.jpg" HeightRequest="40" />
+            <Label Text="TERM AND COURSE MANAGER" 
+           HorizontalOptions="Center" VerticalOptions="Center" FontSize="19" />
+        </StackLayout>
+        <Label x:Name="courseName" />
+        <Label Text="Click on a note below to view, edit, delete, or share it." />
+        <ScrollView BackgroundColor="#e9eef7">
+            <StackLayout x:Name="listOfNotes" />
+        </ScrollView>
+        <Button x:Name="addNoteButton" Text="+ ADD NOTE" BackgroundColor="LightSkyBlue" />
+        <Button x:Name="goBackButton" Text="GO BACK" BackgroundColor="Orange" />
+
+    </StackLayout>
+</ContentPage>
